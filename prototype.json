@@ -1,0 +1,22 @@
+{
+	"titre": "",
+	"description": "",
+	"categorie": "",
+	"duree": "",
+	"realisateur": "",
+	"sceances": [
+		{
+			"cinema": "cap vert",
+			"diffusions": [
+				{
+					"salle": "3",
+					"date": "30/01/2023",
+					"heures": "12h50",
+					"entrees": 200
+				}
+			]
+		}
+	],
+	"notes": [],
+	"commentaires": []
+}
