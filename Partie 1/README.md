@@ -1,0 +1,1 @@
+Répition champs cinéma néglibable
