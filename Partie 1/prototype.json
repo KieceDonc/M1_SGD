@@ -1,22 +1,44 @@
+-- Films
 {
 	"titre": "",
 	"description": "",
 	"categorie": "",
 	"duree": "",
 	"realisateur": "",
-	"sceances": [
+}
+
+-- Diffusion
+{
+	"cinema":"",
+	"diffusions":[
 		{
-			"cinema": "cap vert",
-			"diffusions": [
-				{
-					"salle": "3",
-					"date": "30/01/2023",
-					"heures": "12h50",
-					"entrees": 200
-				}
-			]
+			"filmID": "",
+			"salle": "3",
+			"date": "30/01/2023",
+			"heures": "12h50",
+			"entrees": 200
 		}
-	],
-	"notes": [],
-	"commentaires": []
+	]
+}
+
+-- Utilisateurs
+{
+	"nom":"",
+	"prenom":"",
+	"sexe":"",
+	"age":"",
+}
+
+-- Notes
+{
+	"utilisateurID":"",
+	"filmID": "",
+	"note": 4,
+}
+
+-- Commentaires
+{
+	"utilisateurID":"",
+	"filmID": "",
+	"commentaire": "Le film était..",
 }
