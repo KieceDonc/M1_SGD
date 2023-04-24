@@ -1,0 +1,40 @@
+﻿{
+    "_id": ObjectId("60bce99de22a0d0c6a21193f"),
+    "titre": "Inception",
+    "description": "Un homme est chargé d'implanter une idée dans l'esprit d'un autre en manipulant ses rêves.",
+    "categorie": "Science-fiction",
+    "duree": 148,
+    "realisateur": "Christopher Nolan"
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a211940"),
+    "titre": "Le Parrain",
+    "description": "L'histoire de la famille Corleone, une des plus puissantes familles de la mafia new-yorkaise dans les années 1940.",
+    "categorie": "Drame",
+    "duree": 175,
+    "realisateur": "Francis Ford Coppola"
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a211941"),
+    "titre": "Le Seigneur des anneaux : Le Retour du roi",
+    "description": "La dernière bataille pour la Terre du Milieu se prépare. Frodon et Sam se rapprochent du Mont Doom, où ils doivent détruire l'Anneau Unique et ainsi mettre fin à la domination de Sauron.",
+    "categorie": "Fantastique",
+    "duree": 201,
+    "realisateur": "Peter Jackson"
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a211942"),
+    "titre": "Forrest Gump",
+    "description": "L'histoire d'un homme simplet qui traverse l'histoire des États-Unis, des années 1950 aux années 1980.",
+    "categorie": "Comédie dramatique",
+    "duree": 142,
+    "realisateur": "Robert Zemeckis"
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a211943"),
+    "titre": "La Liste de Schindler",
+    "description": "L'histoire de Oskar Schindler, un homme d'affaires allemand qui a sauvé la vie de plus de mille juifs pendant l'Holocauste.",
+    "categorie": "Drame historique",
+    "duree": 195,
+    "realisateur": "Steven Spielberg"
+}

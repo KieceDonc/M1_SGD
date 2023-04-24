@@ -1,0 +1,30 @@
+﻿{
+    "_id": ObjectId("60bce99de22a0d0c6a211957"),
+    "utilisateurID": ObjectId("60bce99de22a0d0c6a211946"),
+    "filmID": ObjectId("60bce99de22a0d0c6a21193f"),
+    "commentaire": "J'ai adoré ce film, l'histoire est très prenante !"
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a211958"),
+    "utilisateurID": ObjectId("60bce99de22a0d0c6a211947"),
+    "filmID": ObjectId("60bce99de22a0d0c6a21193f"),
+    "commentaire": "Pas mal mais je m'attendais à mieux"
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a211959"),
+    "utilisateurID": ObjectId("60bce99de22a0d0c6a211948"),
+    "filmID": ObjectId("60bce99de22a0d0c6a21193f"),
+    "commentaire": "Un chef-d'oeuvre, à voir absolument !"
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a21195a"),
+    "utilisateurID": ObjectId("60bce99de22a0d0c6a211947"),
+    "filmID": ObjectId("60bce99de22a0d0c6a211940"),
+    "commentaire": "Très drôle, j'ai passé un bon moment"
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a21195b"),
+    "utilisateurID": ObjectId("60bce99de22a0d0c6a211949"),
+    "filmID": ObjectId("60bce99de22a0d0c6a211944"),
+    "commentaire": "Décevant, l'histoire manque de profondeur"
+}

@@ -1,0 +1,70 @@
+﻿{
+    "_id": ObjectId("60bce99de22a0d0c6a211946"),
+    "nom": "Dupont",
+    "prenom": "Jean",
+    "sexe": "Homme",
+    "age": 35
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a211947"),
+    "nom": "Martin",
+    "prenom": "Sophie",
+    "sexe": "Femme",
+    "age": 28
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a211948"),
+    "nom": "Lefebvre",
+    "prenom": "Pierre",
+    "sexe": "Homme",
+    "age": 41
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a211949"),
+    "nom": "Garcia",
+    "prenom": "Maria",
+    "sexe": "Femme",
+    "age": 22
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a21194a"),
+    "nom": "Leclerc",
+    "prenom": "Lucie",
+    "sexe": "Femme",
+    "age": 30
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a21194b"),
+    "nom": "Durand",
+    "prenom": "Paul",
+    "sexe": "Homme",
+    "age": 27
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a21194c"),
+    "nom": "Moreau",
+    "prenom": "Julie",
+    "sexe": "Femme",
+    "age": 25
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a21194d"),
+    "nom": "Roux",
+    "prenom": "Alexandre",
+    "sexe": "Homme",
+    "age": 37
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a21194e"),
+    "nom": "Bertrand",
+    "prenom": "Marie",
+    "sexe": "Femme",
+    "age": 31
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a21194f"),
+    "nom": "Girard",
+    "prenom": "Antoine",
+    "sexe": "Homme",
+    "age": 29
+}

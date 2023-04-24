@@ -1,0 +1,47 @@
+﻿{
+    "_id": ObjectId("60bce99de22a0d0c6a211955"),
+    "cinema": "Cinéma 1",
+    "diffusions": [
+        {
+            "filmID": ObjectId("60bce99de22a0d0c6a21193f"),
+            "salle": "1",
+            "date": ISODate("2023-04-05T00:00:00Z"),
+            "heures": ["16h30", "19h30"],
+            "entrees": 230
+        },
+        {
+            "filmID": ObjectId("60bce99de22a0d0c6a211941"),
+            "salle": "2",
+            "date": ISODate("2023-04-05T00:00:00Z"),
+            "heures": ["14h00", "17h00", "20h00"],
+            "entrees": 380
+        }
+    ]
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a211956"),
+    "cinema": "Cinéma 2",
+    "diffusions": [
+        {
+            "filmID": ObjectId("60bce99de22a0d0c6a211940"),
+            "salle": "1",
+            "date": ISODate("2023-04-05T00:00:00Z"),
+            "heures": ["17h00", "20h00"],
+            "entrees": 210
+        },
+        {
+            "filmID": ObjectId("60bce99de22a0d0c6a211943"),
+            "salle": "2",
+            "date": ISODate("2023-04-05T00:00:00Z"),
+            "heures": ["14h00", "18h00"],
+            "entrees": 180
+        },
+        {
+            "filmID": ObjectId("60bce99de22a0d0c6a211944"),
+            "salle": "3",
+            "date": ISODate("2023-04-05T00:00:00Z"),
+            "heures": ["15h00", "19h00"],
+            "entrees": 120
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+﻿{
+    "_id": ObjectId("60bce99de22a0d0c6a211950"),
+    "utilisateurID": ObjectId("60bce99de22a0d0c6a211946"),
+    "filmID": ObjectId("60bce99de22a0d0c6a21193f"),
+    "note": 4
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a211951"),
+    "utilisateurID": ObjectId("60bce99de22a0d0c6a211947"),
+    "filmID": ObjectId("60bce99de22a0d0c6a21193f"),
+    "note": 3
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a211952"),
+    "utilisateurID": ObjectId("60bce99de22a0d0c6a211948"),
+    "filmID": ObjectId("60bce99de22a0d0c6a21193f"),
+    "note": 5
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a211953"),
+    "utilisateurID": ObjectId("60bce99de22a0d0c6a211947"),
+    "filmID": ObjectId("60bce99de22a0d0c6a211940"),
+    "note": 4
+},
+{
+    "_id": ObjectId("60bce99de22a0d0c6a211954"),
+    "utilisateurID": ObjectId("60bce99de22a0d0c6a211949"),
+    "filmID": ObjectId("60bce99de22a0d0c6a211944"),
+    "note": 2
+}
