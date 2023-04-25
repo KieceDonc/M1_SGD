@@ -1,4 +1,4 @@
-﻿# Trouver tous les films de la catégorie "Action" :
+﻿# Trouver tous les films de la catégorie "Science-fiction" :
 db.films.find({categorie: "Science-fiction"})
 
 # Trouver tous les films qui ont été projetés dans la salle "1" du cinéma "Cinéma 1" :
@@ -45,6 +45,10 @@ db.diffusions.aggregate([
 # Trouver les utilisateurs ayant commenté au moins 5 films différents :
 db.commentaires.aggregate([
     {$group: {_id: "$utilisateurID", nombre_films: {$addToSet: "$filmID"}}},
-    {$match: {nombre_films: {$size: 5}}},
-    {$project: {utilisateurID: "$_id"}}
+    {$project: {
+        utilisateurID: "$_id",
+        nombre_films: 1,
+        nb_films_different: {$size: "$nombre_films"}
+    }},
+    {$match: {$expr: {$gte: ["$nb_films_different", 5]}}}
 ])
