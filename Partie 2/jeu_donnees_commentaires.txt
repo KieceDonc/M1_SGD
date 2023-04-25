@@ -1,4 +1,5 @@
-﻿{
+﻿db.commentaires.insertMany([
+{
     "_id": ObjectId("60bce99de22a0d0c6a211957"),
     "utilisateurID": ObjectId("60bce99de22a0d0c6a211946"),
     "filmID": ObjectId("60bce99de22a0d0c6a21193f"),
@@ -28,3 +29,4 @@
     "filmID": ObjectId("60bce99de22a0d0c6a211944"),
     "commentaire": "Décevant, l'histoire manque de profondeur"
 }
+])

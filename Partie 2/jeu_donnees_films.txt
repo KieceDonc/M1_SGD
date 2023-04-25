@@ -1,4 +1,5 @@
-﻿{
+﻿db.films.insertMany([
+{
     "_id": ObjectId("60bce99de22a0d0c6a21193f"),
     "titre": "Inception",
     "description": "Un homme est chargé d'implanter une idée dans l'esprit d'un autre en manipulant ses rêves.",
@@ -38,3 +39,4 @@
     "duree": 195,
     "realisateur": "Steven Spielberg"
 }
+])
