@@ -1,8 +1,8 @@
 ﻿# Trouver tous les films de la catégorie "Action" :
-db.films.find({categorie: "Action"})
+db.films.find({categorie: "Science-fiction"})
 
-# Trouver tous les films qui ont été projetés dans la salle "3" du cinéma "CinéMax" :
-db.diffusion.find({cinema: "CinéMax", "diffusions.salle": "3"})
+# Trouver tous les films qui ont été projetés dans la salle "1" du cinéma "Cinéma 1" :
+db.diffusions.find({cinema: "Cinéma 1", "diffusions.salle": "1"})
 
 # Trouver le nombre total d'entrées pour chaque film 
 db.diffusion.aggregate([
@@ -16,7 +16,7 @@ db.commentaires.aggregate([
 ])
 
 # Trouver les films les plus populaires (ceux avec le plus grand nombre d'entrées) :
-db.diffusion.aggregate([
+db.diffusions.aggregate([
     {$unwind: "$diffusions"},
     {$group: {_id: "$diffusions.filmID", total_entrees: {$sum: "$diffusions.entrees"}}},
     {$sort: {total_entrees: -1}},
@@ -29,7 +29,7 @@ db.notes.aggregate([
 ])
 
 # Trouver tous les films qui ont été projetés au moins une fois dans chaque cinéma :
-db.diffusion.aggregate([
+db.diffusions.aggregate([
     {$unwind: "$diffusions"},
     {$group: {_id: {cinema: "$cinema", filmID: "$diffusions.filmID"}}},
     {$group: {_id: "$_id.filmID", count: {$sum: 1}}},
@@ -37,7 +37,7 @@ db.diffusion.aggregate([
 ])
 
 # Trouver le nombre total d'entrées pour chaque cinéma :
-db.diffusion.aggregate([
+db.diffusions.aggregate([
     {$unwind: "$diffusions"},
     {$group: {_id: "$cinema", total_entrees: {$sum: "$diffusions.entrees"}}}
 ])
