@@ -1,4 +1,28 @@
-﻿# Trouver tous les films de la catégorie "Science-fiction" :
+﻿# --------- INSERTIONS ---------
+
+# Ajouter un nouveau film :
+db.films.insertOne(
+    {
+        "titre": "Interstellar",
+        "description": "Un groupe d'explorateurs voyage à travers un trou de ver pour trouver une nouvelle maison pour l'humanité.",
+        "categorie": "Science-fiction",
+        "duree": 169,
+        "realisateur": "Christopher Nolan"
+    }
+)
+
+# Ajouter un nouveau commentaire :
+{
+    "_id": ObjectId("60bce99de22a0d0c6a211957"),
+    "utilisateurID": ObjectId("60bce99de22a0d0c6a211949"),
+    "filmID": ObjectId("60bce99de22a0d0c6a21193f"),
+    "commentaire": "Le film m'a plu"
+}
+
+
+# --------- LECTURES ---------
+
+# Trouver tous les films de la catégorie "Science-fiction" :
 db.films.find({categorie: "Science-fiction"})
 
 # Trouver tous les films qui ont été projetés dans la salle "1" du cinéma "Cinéma 1" :
@@ -52,3 +76,38 @@ db.commentaires.aggregate([
     }},
     {$match: {$expr: {$gte: ["$nb_films_different", 5]}}}
 ])
+
+
+# MAP−REDUCE
+
+# Trouver le nombre de commentaire pour chaque film
+
+var mapCountCommentaires = function() {
+   emit(this.filmID, 1);
+};
+
+var reduceCountCommentaires = function(filmID, commentaires) {
+   return Array.sum(commentaires);
+};
+
+db.commentaires.mapReduce(
+   mapCountCommentaires,
+   reduceCountCommentaires,
+   { out: "map_reduce_count_commentaires" }
+);
+
+# Calcul de la moyenne des notes de chaque film
+
+var mapAvgNotes = function() {
+   emit(this.filmID, this.note);
+};
+
+var reduceAvgNotes = function(filmID, notes) {
+   return Array.avg(notes);
+};
+
+db.notes.mapReduce(
+   mapAvgNotes,
+   reduceAvgNotes,
+   { out: "map_reduce_avg_notes" }
+);
