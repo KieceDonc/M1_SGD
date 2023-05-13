@@ -12,7 +12,7 @@ db.films.insertOne(
 )
 
 # Ajouter un nouveau commentaire :
-{
+db.commentaires.insertOne{
     "_id": ObjectId("60bce99de22a0d0c6a211957"),
     "utilisateurID": ObjectId("60bce99de22a0d0c6a211949"),
     "filmID": ObjectId("60bce99de22a0d0c6a21193f"),
