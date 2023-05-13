@@ -41,6 +41,9 @@ db.films.find({categorie: "Science-fiction"})
 # Trouver tous les films qui ont été projetés dans la salle "1" du cinéma "Cinéma 1" :
 db.diffusions.find({cinema: "Cinéma 1", "diffusions.salle": "1"})
 
+# Trier la liste des films en fonction de leur durée
+db.films.find({}, {"_id":0,"titre":1,"duree":1}).sort({"duree":1})
+
 # Trouver le nombre total d'entrées pour chaque film 
 db.diffusion.aggregate([
     {$unwind: "$diffusions"},
