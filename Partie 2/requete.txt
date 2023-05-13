@@ -6,7 +6,7 @@ db.films.insertOne(
         "titre": "Interstellar",
         "description": "Un groupe d'explorateurs voyage à travers un trou de ver pour trouver une nouvelle maison pour l'humanité.",
         "categorie": "Science-fiction",
-        "duree": 169,
+        "duree": 150,
         "realisateur": "Christopher Nolan"
     }
 )
@@ -18,6 +18,19 @@ db.films.insertOne(
     "filmID": ObjectId("60bce99de22a0d0c6a21193f"),
     "commentaire": "Le film m'a plu"
 }
+
+# --------- MISES A JOUR ---------
+
+# Modifier le film précédement inséré :
+db.films.updateOne(
+    { "titre" : "Interstellar" },
+    { $set: {"duree":169} }
+)
+
+# --------- SUPPRESSIONS ---------
+
+# Supprimer le film précédement inséré :
+db.films.deleteOne({"titre" : "Interstellar"})
 
 
 # --------- LECTURES ---------
