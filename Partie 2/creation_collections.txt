@@ -1,0 +1,5 @@
+db.createCollection("films")
+db.createCollection("commentaires")
+db.createCollection("diffusions")
+db.createCollection("cinema")
+db.createCollection("notes")
